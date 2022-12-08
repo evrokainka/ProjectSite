@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Конструктор сайтов" name="description">
+    <title>Конструктор сайтов</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="visually-hidden">Конструктор сайтов</h1>
+      <form class="grid-select">
+        <h2 class="grid-select__header">Выберите сетку сайта</h2>
+        <input class="grid-select__radio visually-hidden" checked="checked" id="grid-landing" name="grid" type="radio" value="landing">
+        <label class="grid-select__btn" for="grid-landing">
+          <span class="grid-select__text">Лендинг</span>
+        </label>
+        <input class="grid-select__radio visually-hidden" id="grid-blog" name="grid" type="radio" value="blog">
+        <label class="grid-select__btn" for="grid-blog">
+          <span class="grid-select__text">Блог</span>
+        </label>
+        <input class="grid-select__radio visually-hidden" id="grid-shop" name="grid" type="radio" value="shop">
+        <label class="grid-select__btn" for="grid-shop">
+          <span class="grid-select__text">Магазин</span>
+      </label>
+      </form> 
+      <div class="layout layout--landing">
+        <header class="header header--empty">
+          <p class="placeholder">Header</p>
+          <button class="add-btn" type="button"></button>
+          <div class="choose-elem hidden">
+            
+            <!-- Для понимания какой конкретно элемент мы нажимаем добавим элементы data- разбиения на контейнеры (разделы сайта) и на тип добавляемого элемента -->
+            <button class="choose-elem__btn" data-container="header" data-type="h1" type="button">Заголовок H1</button>
+            <button class="choose-elem__btn" data-container="header" data-type="h2" type="button">Заголовок H2</button>
+            <button class="choose-elem__btn" data-container="header" data-type="h3" type="button">Заголовок H3</button>
+            <button class="choose-elem__btn" data-container="header" data-type="p" type="button">Абзац текста</button>
+            <button class="choose-elem__btn" data-container="header" data-type="img" type="button">Изображение</button>
+          </div>
+          <div class="header__elements-wrapper"></div>
+        </header>
+
+        <!--Аналогично сделаем для каждого раздела сайта-->
+        <div class="content content-1 content--empty">
+          <p class="placeholder">Content</p>
+          <button class="add-btn" type="button"></button>
+          <div class="choose-elem hidden">
+            <button class="choose-elem__btn" data-container="content-1" data-type="h1" type="button">Заголовок H1
+            </button>
+            <button class="choose-elem__btn" data-container="content-1" data-type="h2" type="button">Заголовок H2
+            </button>
+            <button class="choose-elem__btn" data-container="content-1" data-type="h3" type="button">Заголовок H3
+            </button>
+            <button class="choose-elem__btn" data-container="content-1" data-type="p" type="button">Абзац текста
+            </button>
+            <button class="choose-elem__btn" data-container="content-1" data-type="img" type="button">Изображение
+            </button>
+          </div>
+          <div class="content__elements-wrapper content-1__elements-wrapper"></div>
+        </div>
+
+        <div class="content content-2 content--empty">
+          <p class="placeholder">Content</p>
+          <button class="add-btn" type="button"></button>
+          <div class="choose-elem hidden">
+            <button class="choose-elem__btn" data-container="content-2" data-type="h1" type="button">Заголовок H1
+            </button>
+            <button class="choose-elem__btn" data-container="content-2" data-type="h2" type="button">Заголовок H2
+            </button>
+            <button class="choose-elem__btn" data-container="content-2" data-type="h3" type="button">Заголовок H3
+            </button>
+            <button class="choose-elem__btn" data-container="content-2" data-type="p" type="button">Абзац текста
+            </button>
+            <button class="choose-elem__btn" data-container="content-2" data-type="img" type="button">Изображение
+            </button>
+          </div>
+          <div class="content__elements-wrapper content-2__elements-wrapper"></div>
+        </div>
+
+        <div class="content content-3 content--empty">
+          <p class="placeholder">Content</p>
+          <button class="add-btn" type="button"></button>
+          <div class="choose-elem hidden">
+            <button class="choose-elem__btn" data-container="content-3" data-type="h1" type="button">Заголовок H1
+            </button>
+            <button class="choose-elem__btn" data-container="content-3" data-type="h2" type="button">Заголовок H2
+            </button>
+            <button class="choose-elem__btn" data-container="content-3" data-type="h3" type="button">Заголовок H3
+            </button>
+            <button class="choose-elem__btn" data-container="content-3" data-type="p" type="button">Абзац текста
+            </button>
+            <button class="choose-elem__btn" data-container="content-3" data-type="img" type="button">Изображение
+            </button>
+          </div>
+          <div class="content__elements-wrapper content-3__elements-wrapper"></div>
+        </div>
+
+        <footer class="footer footer--empty">
+          <p class="placeholder">Footer</p>
+          <button class="add-btn" type="button"></button>
+          <div class="choose-elem hidden">
+            <button class="choose-elem__btn" data-container="footer" data-type="h1" type="button">Заголовок H1</button>
+            <button class="choose-elem__btn" data-container="footer" data-type="h2" type="button">Заголовок H2</button>
+            <button class="choose-elem__btn" data-container="footer" data-type="h3" type="button">Заголовок H3</button>
+            <button class="choose-elem__btn" data-container="footer" data-type="p" type="button">Абзац текста</button>
+            <button class="choose-elem__btn" data-container="footer" data-type="img" type="button">Изображение</button>
+          </div>
+          <div class="footer__elements-wrapper"></div>
+        </footer>
+
+      </div>
+    </div>
+
+    <template id="h1-template">
+      <div class="element title">
+        <h1 class="template-content">Элемент "Заголовок H1" (Дважды нажмите для редактирования)</h1>
+        <button class="delete-btn" type="button">
+          <span class="visually-hidden">Удалить элемент</span>
+        </button>
+      </div>
+    </template>
+
+    <template id="h2-template">
+      <div class="element title">
+        <h2 class="template-content">Элемент "Заголовок H2" (Дважды нажмите для редактирования)</h2>
+        <button class="delete-btn" type="button">
+          <span class="visually-hidden">Удалить элемент</span>
+        </button>
+      </div>
+    </template>
+
+    <template id="h3-template">
+      <div class="element title">
+        <h3 class="template-content">Элемент "Заголовок H3" (Дважды нажмите для редактирования)</h3>
+        <button class="delete-btn" type="button">
+          <span class="visually-hidden">Удалить элемент</span>
+        </button>
+      </div>
+    </template>
+
+    <template id="p-template">
+      <div class="element text">
+        <p class="template-content">Элемент "Абзац текста" (Дважды нажмите для редактирования)</p>
+        <button class="delete-btn" type="button">
+          <span class="visually-hidden">Удалить элемент</span>
+        </button>
+      </div>
+    </template>
+
+    <template id="img-template">
+      <div class="element image">
+        <img alt="" class="template-content" src="https://static.wixstatic.com/media/d460ea_0963bef4102d49ceb85d018094c4ccfd~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg">
+        <button class="delete-btn" type="button">
+          <span class="visually-hidden">Удалить элемент</span>
+        </button>
+      </div>
+    </template>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
